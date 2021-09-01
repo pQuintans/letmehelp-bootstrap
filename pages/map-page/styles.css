@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+body {
+  background: #F3F3F3;
+}
+
+.navbar {
+  background-color: #F8F8F8;
+  border-bottom: 1px solid #e2e2e2;
+  box-shadow: 0px 1px 6px 0px #00000014;
+
+  padding: 0 42px;
+}
+
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.profile-picture {
+  height: 40px
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map {
+  margin-top: 30px;
+  border-radius: 10px;
+  margin-bottom: 21px;
+}
+
+@media (max-width: 1200px) {
+  .map {
+    width: 950px;
+  }
+} 
+
+@media (max-width: 991px) {
+  .map {
+    width: 800px;
+    height: 380px;
+  }
+} 
+
+@media (max-width: 564px) {
+  .map {
+    width: 500px;
+    height: 380px;
+  }
+} 
+
+@media (max-width: 425px) {
+  .map {
+    width: 300px;
+    height: 380px;
+  }
+} 
+
+
+
+.persons-row {
+  gap: 30px 24px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.person {
+  width: 250px;
+  height: 270px;
+  padding: 10px;
+  flex: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 18px;
+  background-color: #E1DFFF;
+}
+
+.person-infos-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.person-infos-container p {
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+
+.person-adress {
+  display: flex;
+  margin-bottom: 2px;
+  
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.person-button {
+  width: 165px;
+  height: 60px;
+  background-color: #835AFD;
+  border-radius: 19px;
+
+  border: none;
+
+  margin-top: 16px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+
+  color: #fefefe;
+}
