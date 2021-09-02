@@ -30,3 +30,31 @@ body {
 .profile-dropdown a:focus {
   box-shadow: none !important;
 }
+
+.recent-chat-card {
+  color: #444b54bb;
+  background: #f3f3f3;
+  text-decoration: none;
+
+  transition: color 0.5s
+}
+
+.recent-chat-card:hover {
+  color: rgba(0,0,0,.9);
+}
+
+.recent-chat-card div {
+  border-radius: 10px
+}
+
+.recent-chat-card div .col-md-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-profile-picture {
+  width: 80%;
+  border-radius: 50%;
+  background: #f1f1f1;
+}
