@@ -8,9 +8,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/88ffdc67b2.js" crossorigin="anonymous"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="../../styles/global.css">
 
   <title>LetMeHelp</title>
 </head>
@@ -32,16 +34,24 @@
             <a class="nav-link" href="#">Suporte</a>
           </li>
         </ul>
-        <a class="d-flex" href="#">
-          <img src="../../assets/DefaultProfilePictureCircle.png" alt="Foto de perfil" class="profile-picture">
-        </a>
+        <div class="dropdown profile-dropdown">
+          <a class="btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../../assets/DefaultProfilePictureCircle.png" alt="Foto de perfil" class="profile-picture">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="../user-account/index.html"><i class="far fa-user"></i> Minha Conta</a></li>
+            <li><a class="dropdown-item" href="../favorites/index.html"><i class="far fa-heart"></i> Favoritos</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
   <div class="container-fluid main-content">
     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.220695344051!2d-47.41011508449396!3d-22.570847631645524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c880f167c62d11%3A0x85229605bb0cfb3f!2sCl%C3%ADnica%20de%20Psicoterapia%20-%20Psic%C3%B3loga%20-%20Dra.%20Fernanda%20Pereira%20Nascimento!5e0!3m2!1sen!2sbr!4v1630458183541!5m2!1sen!2sbr" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     <div class="container">
-      <div class="row persons-row ">
+      <div class="row persons-row">
         <div class="col person">
           <div class="person-infos-container">
             <img src="../../assets/DefaultProfilePicture.svg" alt="Foto de Perfil">
@@ -117,7 +127,6 @@
       </div>
     </div>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </body>

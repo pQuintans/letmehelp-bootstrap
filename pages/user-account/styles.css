@@ -1,0 +1,16 @@
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.content-profile-picture {
+  height: 100px
+}
+
+.user-name {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 40px;
+
+  margin-left: 15px;
+}
