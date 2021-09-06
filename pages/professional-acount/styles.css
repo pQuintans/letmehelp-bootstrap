@@ -29,6 +29,7 @@
 
 .profile-container-picture  {
   width: 20%;
+  height: 20%;
   border-radius: 50%;
   background: #f1f1f1;
   border: 3px solid #000;
@@ -36,11 +37,8 @@
   margin-right: 50px;
 
   position: relative;
+  transform: translate(15%,-50%);
   z-index: 1;
-  width: 240px;
-  height: 240px;
-  top: -120px;
-  left: 30px;
   bottom: 0;
 }
 
@@ -105,4 +103,70 @@
 
 .contact:focus {
   box-shadow: none !important;
+}
+
+@media (max-width: 1200px) {
+  .profile-container-name {
+    font-size: 38px;
+    margin-top: 13px;
+  }
+
+  .description{
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .profile-container-picture {
+    margin-right: 20px;
+  }
+
+  .profile-container-name {
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: -18%;
+  }
+
+  .profile-container-contact-infos {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .description{
+    margin-top: 0px;
+  }
+
+  .description-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .infos {
+    flex-direction: column;
+  }
+
+  .profile-container-picture {
+    margin-right: 20px;
+  }
+
+  .profile-container-name {
+    font-size: 35px;
+    margin: -40px 0 0 20px;
+    width: 100%;
+  }
+
+  .profile-container-contact-infos {
+    font-size: 15px;
+    margin-top: -90px;
+  }
+
+  .description{
+    margin-top: 70px;
+    padding: 0 40px;
+  }
+
+  .description-title {
+    font-size: 30px;
+  }
 }

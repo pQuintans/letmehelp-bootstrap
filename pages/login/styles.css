@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+body{
+    background: #FEF9F5; 
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.screen{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.login-text{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    width: 40%;
+    z-index: 1;
+}
+
+.login-text .first-text{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 45px;
+    max-width: 600px;
+    color: #645C5C;
+}
+
+.login-text .second-text{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 129.19%;
+    color: #9595A0;
+}
+
+.login-image{
+    position: fixed;
+    margin-top: 50px;
+    width: 1300px;
+}
+
+.login-form{
+    display: flex;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: 400px;
+    flex-direction: column;
+    padding: 1rem;
+    align-content: center;
+    background: linear-gradient(139.44deg, #AAA8FF 0%, #D8D7FF 96.19%, #E8E8FF 96.19%);
+}
+
+.logo{
+    align-self: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.google-button
+{
+    margin-bottom: 1rem;
+    align-self: center;
+    width: 100%;
+}
+
+.form-control{
+    margin-bottom: 0.5rem;
+}
+
+.send-button{
+    border: none;
+    color: white;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.send-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.cadastrar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 1600px) {
+    .login-image{
+        margin-top: 150px;
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1320px) {
+    .login-image{
+        margin-top: 200px;
+        margin-left: -10px;
+        width: 900px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .login-image{
+        margin-top: 200px;
+        margin-left: -10px;
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    body{
+        overflow: initial;
+        width: calc(100vw - 17px); /*//arrumar barra de roalgem*/
+        height: 100vh;
+    }
+
+    .screen{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .login-text{
+        position: static;
+        width: 100%;
+        margin: 2rem;
+        margin-right: 1rem;
+        z-index: auto;
+        margin: 0;
+        padding: 2rem;
+    }
+    
+    .login-text .first-text{
+        max-width: 100%;
+    }
+
+    .login-image{
+        position: static;
+        margin: 0;
+        width: 100%;
+    }
+
+    .login-form{
+        position: static;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        margin-left: 0;
+        padding: 2rem;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 2rem;
+        background: linear-gradient(139.44deg, #AAA8FF 0%, #D8D7FF 96.19%, #E8E8FF 96.19%);;
+        border-radius: 1rem;
+    }
+}
